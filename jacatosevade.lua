@@ -19,10 +19,10 @@ local Events = ReplicatedStorage:WaitForChild("Events", 1337)
 local Player = Players.LocalPlayer;
 
 -- UI Lib (Fluxus Lib because I like it)
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/Lib/main/fluxusLIB.lua"))()
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/Lib/main/fluxusLIB.lua"))()
 
 -- ESP support
-local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/esp/main/highlightoutline.lua"))()
+local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/esp/main/highlightoutline.lua"))()
 
 -- Main Window
 local Window = lib:CreateWindow("Evade ; Made by jacato")
@@ -106,24 +106,24 @@ end)
 
 -- my outfit
 MainSection:AddButton("Diamond Outfit : )", "Jacatos custom diamond head outfit (only works for him)", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/diamondevade.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/cautiousevade.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/pants.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/shirt.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/frozen.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/void.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/diamondevade.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/cautiousevade.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/pants.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/shirt.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/frozen.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/void.lua"))()
 end)
 
 -- my 2nd outfit
 MainSection:AddButton("Vespertilio Outfit ; )", "Jacatos custom vesp outfit (only works for him)", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/pants2.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/shirt2.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/cape.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/wings.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/spike1.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/spike2.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/greenwarrior.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeInf/hats/main/dominusvesp.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/pants2.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/shirt2.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/cape.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/wings.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/spike1.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/spike2.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/greenwarrior.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/dominusvesp.lua"))()
     end)
 
 -- Character Highlights
