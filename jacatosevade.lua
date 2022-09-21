@@ -212,3 +212,7 @@ task.spawn(function()
         end
     end
 end)
+
+game:GetService("Players").LocalPlayer:GetMouse().KeyDown:connect(function(dbb)
+if string.lower(dbb)=="v"then if game:GetService("CoreGui").FluxHub.Frame.Visible==true then game:GetService("CoreGui").FluxHub.Frame.Visible=false elseif game:GetService("CoreGui").FluxHub.Frame.Visible==false then
+game:GetService("CoreGui").FluxHub.Frame.Visible=true end end end)
