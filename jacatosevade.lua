@@ -105,13 +105,9 @@ MainSection:AddButton("Respawn", "Free respawn (not 15rbx), use while downed! no
 end)
 
 -- my outfit
-MainSection:AddButton("Diamond Outfit : )", "Jacatos custom diamond head outfit (only works for him)", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/diamondevade.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/cautiousevade.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/pants.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/shirt.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/frozen.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/void.lua"))()
+MainSection:AddButton("vamp (㇏(>ᵥᵥ<)ノ)", "Jacatos vamp fit (㇏(>ᵥᵥ<)ノ) (only works for him)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/bih.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/skotn.lua"))()
 end)
 
 -- my 2nd outfit
