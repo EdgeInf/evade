@@ -32,7 +32,7 @@ local MainPage = Window:NewTab("Main")
 
 -- Create Sections
 local CharSection = MainPage:AddSection("Character")
-local OtherSection = MainPage:AddSection("Headless and Heart")
+local OtherSection = MainPage:AddSection("Headless")
 local ESPSection = MainPage:AddSection("Esp stuff")
 local tekuSection = MainPage:AddSection("teku")
 
@@ -866,14 +866,6 @@ end) -- headless on function
 OtherSection:AddButton("Headless off", "Headless", function()
     game.Players.luluuluvrr.Character.Head.MeshId = "http://roblox.com/asset/?id=7430070993"
 end) -- headless off function
-
-
-OtherSection:AddButton("Heart on", "Heart", function()
-    game.Players.luluuluvrr.Character.Humanoid.DisplayName = ('teku ❤️')
-end) -- star on function
-OtherSection:AddButton("Heart off", "Heart", function()
-    game.Players.luluuluvrr.Character.Humanoid.DisplayName = ('teku')
-end) -- star off function
 
 
 -- Character Highlights
