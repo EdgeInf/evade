@@ -104,10 +104,6 @@ CharSection:AddButton("Respawn", "Free respawn (not 15rbx), use while downed! no
     end
 end)
 
--- outfit loader
-
--- MY FITS :3 START HERE.
-
 -- MERC outfit
 CharSection:AddButton("Merc fit", "Merc", function()
     for i,v in pairs(game.Players.luluuluvrr.Character:GetChildren()) do
