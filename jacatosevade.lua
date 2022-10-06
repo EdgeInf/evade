@@ -33,8 +33,8 @@ local MainPage = Window:NewTab("Main")
 -- Create Sections
 local CharSection = MainPage:AddSection("Character")
 local OtherSection = MainPage:AddSection("Headless and Heart")
-local InventorySection = MainPage:AddSection("Dev Emote")
-local JacatoSection = MainPage:AddSection("Copy my discord tag :3")
+local ESPSection = MainPage:AddSection("Esp stuff")
+local tekuSection = MainPage:AddSection("teku")
 
 -- GUI Toggles / Settings
 local Highlights_Active = false;
@@ -907,7 +907,7 @@ ESPSection:AddToggle("No Camera Shake", "Removes camera shake that the bots give
 end)
 
 -- teku copy tag
-JacatoSection:AddButton("Copy teku tag", "Copies his tag (he has frqs off)", function()
+tekuSection:AddButton("Copy teku tag", "Copies his tag (he has frqs off)", function()
     setclipboard("teku#0745")
 end)
 
