@@ -104,23 +104,14 @@ MainSection:AddButton("Respawn", "Free respawn (not 15rbx), use while downed! no
     end
 end)
 
--- my outfit
-MainSection:AddButton("vamp (㇏(>ᵥᵥ<)ノ)", "Jacatos vamp fit (㇏(>ᵥᵥ<)ノ) (only works for him)", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/bih.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/skotn.lua"))()
+-- outfit loader
+MainSection:AddButton("Open outfit loader :3", "outfit loader", function()
+if game.Players.LocalPlayer.UserId == 85059658 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/outfit-loader/main/Loader.lua"))()
+elseif game.Players.LocalPlayer.UserId == 2752075667 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/outfit-loader/main/LoaderM.lua"))()
+end
 end)
-
--- my 2nd outfit
-MainSection:AddButton("Vespertilio Outfit ; )", "Jacatos custom vesp outfit (only works for him)", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/pants2.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/shirt2.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/cape.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/wings.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/spike1.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/spike2.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/greenwarrior.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/hats/main/dominusvesp.lua"))()
-    end)
 
 -- Character Highlights
 ESPSection:AddButton("Character Highlights", "Highlights everyone so u can see them", function()
@@ -152,14 +143,9 @@ ESPSection:AddToggle("No Camera Shake", "Removes camera shake that the bots give
     No_CamShake = bool;
 end)
 
--- dev emote giver
-InventorySection:AddButton("Dev Test Emote", "Gives you the dev emote", function()
-    Events.UI.Purchase:InvokeServer("Emotes", "Test")
-end)
-
--- jacato copy tag
+-- teku copy tag
 JacatoSection:AddButton("Copy Jacato tag", "Copies his tag (he has frqs off)", function()
-    setclipboard("jacato#7533")
+    setclipboard("teku#0745")
 end)
 
 -- [[ Helpers / Loop Funcs ]] --
