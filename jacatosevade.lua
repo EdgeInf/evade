@@ -170,18 +170,6 @@ CharSection:AddButton("Merc fit", "Merc", function()
         game.Players.luluuluvrr.Character['Shirt Graphic'].Graphic = "rbxassetid://11156640644"
         game.Players.luluuluvrr.Character.Head.MeshId = "http://roblox.com/asset/?id=7430070993"
         game.Players.luluuluvrr.Character.Head.face.Texture = "rbxassetid://8560915"
-        game.Players.luluuluvrr.Character.LeftLowerLeg.MeshId = "http://www.roblox.com/asset/?id=7430071105"
-        game.Players.luluuluvrr.Character.LeftLowerLeg.Transparency = "0"
-        game.Players.luluuluvrr.Character.LeftUpperLeg.MeshId = "http://www.roblox.com/asset/?id=7430071119"
-        game.Players.luluuluvrr.Character.LeftUpperLeg.TextureID = "http://roblox.com/asset/?id=0"
-        game.Players.luluuluvrr.Character.LeftFoot.MeshId = "http://www.roblox.com/asset/?id=7430071082"
-        game.Players.luluuluvrr.Character.LeftFoot.Transparency = "0"
-        game.Players.luluuluvrr.Character.RightLowerLeg.MeshId = "http://www.roblox.com/asset/?id=7430071105"
-        game.Players.luluuluvrr.Character.RightLowerLeg.Transparency = "0"
-        game.Players.luluuluvrr.Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=7430071119"
-        game.Players.luluuluvrr.Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=0"
-        game.Players.luluuluvrr.Character.RightFoot.MeshId = "http://www.roblox.com/asset/?id=7430071082"
-        game.Players.luluuluvrr.Character.RightFoot.Transparency = "0"
 q = BrickColor.new("Institutional white")
 e = BrickColor.new("Really black")
 r = BrickColor.new("Dark stone grey")
@@ -191,16 +179,7 @@ game:GetService("Workspace").Game.Players.luluuluvrr["Right Arm"].BrickColor = e
 game:GetService("Workspace").Game.Players.luluuluvrr["Left Arm"].BrickColor = e
 game:GetService("Workspace").Game.Players.luluuluvrr["Left Leg"].BrickColor = e
 game:GetService("Workspace").Game.Players.luluuluvrr["Right Leg"].BrickColor = e
-game.Players.luluuluvrr.Character.MedivalBikeHelmet.Handle.CanCollide = false
-game.Players.luluuluvrr.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=657595757"
-game.Players.luluuluvrr.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=657568135"
-game.Players.luluuluvrr.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=657552124"
-game.Players.luluuluvrr.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
-game.Players.luluuluvrr.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
-game.Players.luluuluvrr.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
-game.Players.luluuluvrr.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
-game.Players.luluuluvrr.Character.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=2510199791"
-game.Players.luluuluvrr.Character.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=2510201162"
+game:GetService("Workspace").Game.Players.luluuluvrr.MedivalBikeHelmet.Handle.CanCollide = false
 end)
 
 -- MERC HATS
@@ -372,18 +351,9 @@ CharSection:AddButton("Merc rich hats", "Merc", function()
         local _ = 1340199684
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.luluuluvrr.Character, _)
-	game.Players.luluuluvrr.Character.MedivalBikeHelmet.Handle.CanCollide = false
-	game.Players.luluuluvrr.Character.DarkFedration.Handle.CanCollide = false
-	game.Players.luluuluvrr.Character.FlamingHorns.Handle.CanCollide = false
-	game.Players.luluuluvrr.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=657595757"
-	game.Players.luluuluvrr.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=657568135"
-	game.Players.luluuluvrr.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=657552124"
-	game.Players.luluuluvrr.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
-	game.Players.luluuluvrr.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
-	game.Players.luluuluvrr.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
-	game.Players.luluuluvrr.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
-	game.Players.luluuluvrr.Character.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=2510199791"
-	game.Players.luluuluvrr.Character.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=2510201162"
+game:GetService("Workspace").Game.Players.luluuluvrr.MedivalBikeHelmet.Handle.CanCollide = false
+game:GetService("Workspace").Game.Players.luluuluvrr.DarkFedration.Handle.CanCollide = false
+game:GetService("Workspace").Game.Players.luluuluvrr.FlamingHorns.Handle.CanCollide = false
 end)
 
 -- noob sign
@@ -451,18 +421,6 @@ CharSection:AddButton("Noob sign", "Weed inhaler", function()
         game.Players.luluuluvrr.Character.Pants.PantsTemplate = "rbxassetid://0"
         game.Players.luluuluvrr.Character['Shirt Graphic'].Graphic = "rbxassetid://8170120076"
         game.Players.luluuluvrr.Character.Head.face.Texture = "rbxassetid://7076053"
-        game.Players.luluuluvrr.Character.LeftLowerLeg.MeshId = "http://www.roblox.com/asset/?id=7430071105"
-        game.Players.luluuluvrr.Character.LeftLowerLeg.Transparency = "0"
-        game.Players.luluuluvrr.Character.LeftUpperLeg.MeshId = "http://www.roblox.com/asset/?id=7430071119"
-        game.Players.luluuluvrr.Character.LeftUpperLeg.TextureID = "http://roblox.com/asset/?id=0"
-        game.Players.luluuluvrr.Character.LeftFoot.MeshId = "http://www.roblox.com/asset/?id=7430071082"
-        game.Players.luluuluvrr.Character.LeftFoot.Transparency = "0"
-        game.Players.luluuluvrr.Character.RightLowerLeg.MeshId = "http://www.roblox.com/asset/?id=7430071105"
-        game.Players.luluuluvrr.Character.RightLowerLeg.Transparency = "0"
-        game.Players.luluuluvrr.Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=7430071119"
-        game.Players.luluuluvrr.Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=0"
-        game.Players.luluuluvrr.Character.RightFoot.MeshId = "http://www.roblox.com/asset/?id=7430071082"
-        game.Players.luluuluvrr.Character.RightFoot.Transparency = "0"
         game.Players.luluuluvrr.Character.Head.MeshId = "http://roblox.com/asset/?id=7430070993"
 q = BrickColor.new("Institutional white")
 e = BrickColor.new("Dark stone grey")
@@ -473,16 +431,7 @@ game:GetService("Workspace").Game.Players.luluuluvrr["Right Arm"].BrickColor = e
 game:GetService("Workspace").Game.Players.luluuluvrr["Left Arm"].BrickColor = e
 game:GetService("Workspace").Game.Players.luluuluvrr["Left Leg"].BrickColor = e
 game:GetService("Workspace").Game.Players.luluuluvrr["Right Leg"].BrickColor = e
-	game.Players.luluuluvrr.Character.NoobSign.Handle.CanCollide = false
-    game.Players.luluuluvrr.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=845397899"
-    game.Players.luluuluvrr.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=845400520"
-	game.Players.luluuluvrr.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=657552124"
-	game.Players.luluuluvrr.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
-	game.Players.luluuluvrr.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
-	game.Players.luluuluvrr.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
-	game.Players.luluuluvrr.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
-	game.Players.luluuluvrr.Character.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=2510199791"
-	game.Players.luluuluvrr.Character.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=2510201162"
+game:GetService("Workspace").Game.Players.luluuluvrr.NoobSign.Handle.CanCollide = false
 end)
 
 -- noob sign goat
@@ -820,18 +769,6 @@ CharSection:AddButton("Noob sign goat hats", "yeah", function()
         game.Players.luluuluvrr.Character.Pants.PantsTemplate = "rbxassetid://11138188256"
         game.Players.luluuluvrr.Character['Shirt Graphic'].Graphic = "rbxassetid://8170120076"
         game.Players.luluuluvrr.Character.Head.face.Texture = "rbxassetid://7076053"
-        game.Players.luluuluvrr.Character.LeftLowerLeg.MeshId = "http://www.roblox.com/asset/?id=7430071105"
-        game.Players.luluuluvrr.Character.LeftLowerLeg.Transparency = "0"
-        game.Players.luluuluvrr.Character.LeftUpperLeg.MeshId = "http://www.roblox.com/asset/?id=7430071119"
-        game.Players.luluuluvrr.Character.LeftUpperLeg.TextureID = "http://roblox.com/asset/?id=0"
-        game.Players.luluuluvrr.Character.LeftFoot.MeshId = "http://www.roblox.com/asset/?id=7430071082"
-        game.Players.luluuluvrr.Character.LeftFoot.Transparency = "0"
-        game.Players.luluuluvrr.Character.RightLowerLeg.MeshId = "http://www.roblox.com/asset/?id=7430071105"
-        game.Players.luluuluvrr.Character.RightLowerLeg.Transparency = "0"
-        game.Players.luluuluvrr.Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=7430071119"
-        game.Players.luluuluvrr.Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=0"
-        game.Players.luluuluvrr.Character.RightFoot.MeshId = "http://www.roblox.com/asset/?id=7430071082"
-        game.Players.luluuluvrr.Character.RightFoot.Transparency = "0"
         game.Players.luluuluvrr.Character.Head.MeshId = "http://roblox.com/asset/?id=7430070993"
 q = BrickColor.new("Institutional white")
 e = BrickColor.new("Dark stone grey")
@@ -842,29 +779,20 @@ game:GetService("Workspace").Game.Players.luluuluvrr["Right Arm"].BrickColor = e
 game:GetService("Workspace").Game.Players.luluuluvrr["Left Arm"].BrickColor = e
 game:GetService("Workspace").Game.Players.luluuluvrr["Left Leg"].BrickColor = e
 game:GetService("Workspace").Game.Players.luluuluvrr["Right Leg"].BrickColor = e
-game.Players.luluuluvrr.Character.CuteBlush2Accessory.Handle.CanCollide = false
-game.Players.luluuluvrr.Character["Meshes/粉色领结Accessory"].Handle.CanCollide = false
-game.Players.luluuluvrr.Character.OrangeLambHorns.Handle.CanCollide = false
-game.Players.luluuluvrr.Character["Lamb Ears Pink"].Handle.CanCollide = false
-game.Players.luluuluvrr.Character.NoobSign.Handle.CanCollide = false
-game.Players.luluuluvrr.Character.GoatTail.Handle.CanCollide = false
-    game.Players.luluuluvrr.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=845397899"
-    game.Players.luluuluvrr.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=845400520"
-	game.Players.luluuluvrr.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=657552124"
-	game.Players.luluuluvrr.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
-	game.Players.luluuluvrr.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
-	game.Players.luluuluvrr.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
-	game.Players.luluuluvrr.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
-	game.Players.luluuluvrr.Character.Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=2510199791"
-	game.Players.luluuluvrr.Character.Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=2510201162"
+game:GetService("Workspace").Game.Players.luluuluvrr.CuteBlush2Accessory.Handle.CanCollide = false
+game:GetService("Workspace").Game.Players.luluuluvrr["Meshes/粉色领结Accessory"].Handle.CanCollide = false
+game:GetService("Workspace").Game.Players.luluuluvrr.OrangeLambHorns.Handle.CanCollide = false
+game:GetService("Workspace").Game.Players.luluuluvrr["Lamb Ears Pink"].Handle.CanCollide = false
+game:GetService("Workspace").Game.Players.luluuluvrr.NoobSign.Handle.CanCollide = false
+game:GetService("Workspace").Game.Players.luluuluvrr.GoatTail.Handle.CanCollide = false
 end)
 
 
 OtherSection:AddButton("Headless on", "Headless", function()
-    game.Players.luluuluvrr.Character.Head.MeshId = "rbxassetid://134079402"
+    game:GetService("Workspace").Game.Players.luluuluvrr.Head.MeshId = "rbxassetid://134079402"
 end) -- headless on function
 OtherSection:AddButton("Headless off", "Headless", function()
-    game.Players.luluuluvrr.Character.Head.MeshId = "http://roblox.com/asset/?id=7430070993"
+    game:GetService("Workspace").Game.Players.luluuluvrr.Head.MeshId = "http://roblox.com/asset/?id=7430070993"
 end) -- headless off function
 
 
