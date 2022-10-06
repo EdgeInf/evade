@@ -931,7 +931,7 @@ ESPSection:AddToggle("No Camera Shake", "Removes camera shake that the bots give
 end)
 
 -- teku copy tag
-JacatoSection:AddButton("Copy Jacato tag", "Copies his tag (he has frqs off)", function()
+JacatoSection:AddButton("Copy teku tag", "Copies his tag (he has frqs off)", function()
     setclipboard("teku#0745")
 end)
 
