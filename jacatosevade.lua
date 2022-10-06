@@ -798,7 +798,6 @@ game:GetService("Workspace").Game.Players.luluuluvrr.Head.MeshId = "http://roblo
 Instance.new("Decal", game:GetService("Workspace").Game.Players.luluuluvrr.Head)
 game:GetService("Workspace").Game.Players.luluuluvrr.Head.Decal.Texture = "rbxassetid://7076053"
 game:GetService("Workspace").Game.Players.luluuluvrr.Head.Decal.Name = "face"
-end
 end) -- headless off function
 
 
