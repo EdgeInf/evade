@@ -165,11 +165,11 @@ CharSection:AddButton("Merc fit", "Merc", function()
         local _ = 283749451
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.luluuluvrr.Character, _)
-        game.Players.luluuluvrr.Character.Shirt.ShirtTemplate = "rbxassetid://0"
-        game.Players.luluuluvrr.Character.Pants.PantsTemplate = "rbxassetid://0"
-        game.Players.luluuluvrr.Character['Shirt Graphic'].Graphic = "rbxassetid://11156640644"
-        game.Players.luluuluvrr.Character.Head.MeshId = "http://roblox.com/asset/?id=7430070993"
-        game.Players.luluuluvrr.Character.Head.face.Texture = "rbxassetid://8560915"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Shirt.ShirtTemplate = "rbxassetid://0"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Pants.PantsTemplate = "rbxassetid://0"
+        game:GetService("Workspace").Game.Players.luluuluvrr['Shirt Graphic'].Graphic = "rbxassetid://11156640644"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Head.Mesh.MeshId = "http://roblox.com/asset/?id=7430070993"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Head.face.Texture = "rbxassetid://8560915"
 q = BrickColor.new("Institutional white")
 e = BrickColor.new("Really black")
 r = BrickColor.new("Dark stone grey")
@@ -417,11 +417,11 @@ CharSection:AddButton("Noob sign", "Weed inhaler", function()
         local _ = 10060525
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.luluuluvrr.Character, _)
-        game.Players.luluuluvrr.Character.Shirt.ShirtTemplate = "rbxassetid://0"
-        game.Players.luluuluvrr.Character.Pants.PantsTemplate = "rbxassetid://0"
-        game.Players.luluuluvrr.Character['Shirt Graphic'].Graphic = "rbxassetid://8170120076"
-        game.Players.luluuluvrr.Character.Head.face.Texture = "rbxassetid://7076053"
-        game.Players.luluuluvrr.Character.Head.MeshId = "http://roblox.com/asset/?id=7430070993"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Shirt.ShirtTemplate = "rbxassetid://0"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Pants.PantsTemplate = "rbxassetid://0"
+        game:GetService("Workspace").Game.Players.luluuluvrr['Shirt Graphic'].Graphic = "rbxassetid://8170120076"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Head.face.Texture = "rbxassetid://7076053"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Head.Mesh.MeshId = "http://roblox.com/asset/?id=7430070993"
 q = BrickColor.new("Institutional white")
 e = BrickColor.new("Dark stone grey")
 r = BrickColor.new("Medium stone grey")
@@ -765,11 +765,11 @@ CharSection:AddButton("Noob sign goat hats", "yeah", function()
         local _ = 10060525
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.luluuluvrr.Character, _)
-        game.Players.luluuluvrr.Character.Shirt.ShirtTemplate = "rbxassetid://11138185830"
-        game.Players.luluuluvrr.Character.Pants.PantsTemplate = "rbxassetid://11138188256"
-        game.Players.luluuluvrr.Character['Shirt Graphic'].Graphic = "rbxassetid://8170120076"
-        game.Players.luluuluvrr.Character.Head.face.Texture = "rbxassetid://7076053"
-        game.Players.luluuluvrr.Character.Head.MeshId = "http://roblox.com/asset/?id=7430070993"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Shirt.ShirtTemplate = "rbxassetid://11138185830"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Pants.PantsTemplate = "rbxassetid://11138188256"
+        game:GetService("Workspace").Game.Players.luluuluvrr['Shirt Graphic'].Graphic = "rbxassetid://8170120076"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Head.face.Texture = "rbxassetid://7076053"
+        game:GetService("Workspace").Game.Players.luluuluvrr.Head.Mesh.MeshId = "http://roblox.com/asset/?id=7430070993"
 q = BrickColor.new("Institutional white")
 e = BrickColor.new("Dark stone grey")
 r = BrickColor.new("Medium stone grey")
@@ -793,7 +793,7 @@ game:GetService("Workspace").Game.Players.luluuluvrr.Head.Mesh.MeshId = "rbxasse
 end) -- headless on function
 
 OtherSection:AddButton("Headless off", "Headless", function()
-    game:GetService("Workspace").Game.Players.luluuluvrr.Head.Mesh.MeshId = "http://roblox.com/asset/?id=7430070993"
+game:GetService("Workspace").Game.Players.luluuluvrr.Head.Mesh.MeshId = "http://roblox.com/asset/?id=7430070993"
 end) -- headless off function
 
 
