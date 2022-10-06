@@ -790,8 +790,8 @@ end)
 
 OtherSection:AddButton("Headless on", "Headless", function()
 game:GetService("Workspace").Game.Players.luluuluvrr.Head.MeshId = "rbxassetid://134079402"
-game.Players.LocalPlayer.Character.Head.face:Destroy()
-game.Players.LocalPlayer.Character.Head.face:Destroy()
+game:GetService("Workspace").Game.Players.luluuluvrr.Head.face:Destroy()
+game:GetService("Workspace").Game.Players.luluuluvrr.Head.face:Destroy()
 end) -- headless on function
 OtherSection:AddButton("Headless off", "Headless", function()
 game:GetService("Workspace").Game.Players.luluuluvrr.Head.MeshId = "http://roblox.com/asset/?id=7430070993"
