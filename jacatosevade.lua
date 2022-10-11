@@ -156,7 +156,6 @@ CharSection:AddButton("Merc fit", "Merc", function()
         game:GetService("Workspace").Game.Players.luluuluvrr.Shirt.ShirtTemplate = "rbxassetid://0"
         game:GetService("Workspace").Game.Players.luluuluvrr.Pants.PantsTemplate = "rbxassetid://0"
         game:GetService("Workspace").Game.Players.luluuluvrr['Shirt Graphic'].Graphic = "rbxassetid://11156640644"
-        game:GetService("Workspace").Game.Players.luluuluvrr.Head.Mesh.MeshId = "http://roblox.com/asset/?id=7430070993"
         game:GetService("Workspace").Game.Players.luluuluvrr.Head.face.Texture = "rbxassetid://8560915"
 q = BrickColor.new("Institutional white")
 e = BrickColor.new("Really black")
@@ -409,7 +408,6 @@ CharSection:AddButton("Noob sign", "Weed inhaler", function()
         game:GetService("Workspace").Game.Players.luluuluvrr.Pants.PantsTemplate = "rbxassetid://0"
         game:GetService("Workspace").Game.Players.luluuluvrr['Shirt Graphic'].Graphic = "rbxassetid://8170120076"
         game:GetService("Workspace").Game.Players.luluuluvrr.Head.face.Texture = "rbxassetid://7076053"
-        game:GetService("Workspace").Game.Players.luluuluvrr.Head.Mesh.MeshId = "http://roblox.com/asset/?id=7430070993"
 q = BrickColor.new("Institutional white")
 e = BrickColor.new("Dark stone grey")
 r = BrickColor.new("Medium stone grey")
@@ -757,7 +755,6 @@ CharSection:AddButton("Noob sign goat hats", "yeah", function()
         game:GetService("Workspace").Game.Players.luluuluvrr.Pants.PantsTemplate = "rbxassetid://11138188256"
         game:GetService("Workspace").Game.Players.luluuluvrr['Shirt Graphic'].Graphic = "rbxassetid://8170120076"
         game:GetService("Workspace").Game.Players.luluuluvrr.Head.face.Texture = "rbxassetid://7076053"
-        game:GetService("Workspace").Game.Players.luluuluvrr.Head.Mesh.MeshId = "http://roblox.com/asset/?id=7430070993"
 q = BrickColor.new("Institutional white")
 e = BrickColor.new("Dark stone grey")
 r = BrickColor.new("Medium stone grey")
