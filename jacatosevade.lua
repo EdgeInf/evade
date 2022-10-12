@@ -25,7 +25,7 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/L
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/esp/main/highlightoutline.lua"))()
 
 -- Main Window
-local Window = lib:CreateWindow("Evade ; Made by jacato")
+local Window = lib:CreateWindow("Evade ; Made by teku")
 
 -- Create Pages
 local MainPage = Window:NewTab("Main")
