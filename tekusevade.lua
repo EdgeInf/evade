@@ -827,7 +827,7 @@ end)
 
 -- teku copy tag
 tekuSection:AddButton("Copy teku tag", "Copies his tag (he has frqs off)", function()
-    setclipboard("teku#0745")
+    setclipboard("🔩 tekustein 🔩#0745")
 end)
 
 -- [[ Helpers / Loop Funcs ]] --
