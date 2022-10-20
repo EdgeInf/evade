@@ -19,10 +19,10 @@ local Events = ReplicatedStorage:WaitForChild("Events", 1337)
 local Player = Players.LocalPlayer;
 
 -- UI Lib (Fluxus Lib because I like it)
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/Lib/main/fluxusLIB.lua"))()
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/Lib/main/fluxusLIB.lua"))()
 
 -- ESP support
-local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/jacamto/esp/main/highlightoutline.lua"))()
+local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/esp/main/highlightoutline.lua"))()
 
 -- Main Window
 local Window = lib:CreateWindow("Evade ; Made by teku")
