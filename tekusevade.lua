@@ -781,20 +781,6 @@ OtherSection:AddButton("Headless off", "Headless", function()
 game:GetService("Workspace").Game.Players.luluuluvrr.Head.Mesh.MeshId = "http://roblox.com/asset/?id=7430070993"
 end) -- headless off function
 
-
-
--- Respawn/Reset
-ESPSection:AddButton("Respawn", "Free respawn (not 15rbx), use while downed! not dead!", function()
-    local Reset = Events:FindFirstChild("Reset")
-    local Respawn = Events:FindFirstChild("Respawn")
-
-    if Reset and Respawn then
-        Reset:FireServer();
-        task.wait(2)
-        Respawn:FireServer();
-    end
-end)
-
 -- Character Highlights
 ESPSection:AddButton("Character Highlights", "Highlights everyone so u can see them", function()
     ESP:ClearESP();
