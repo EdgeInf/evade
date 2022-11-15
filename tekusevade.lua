@@ -23,7 +23,7 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/Li
 
 -- ESP support
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/esp/main/highlightoutline.lua"))()
-local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/esp/main/aizenoutline.lua"))()
+local ESP2 = loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/esp/main/aizenoutline.lua"))()
 
 -- Main Window
 local Window = lib:CreateWindow("Evade ; Made by orestias")
@@ -804,19 +804,19 @@ end)
 
 -- Character Highlights
 ESPSection:AddButton("Aizens esp", "aizen", function()
-    ESP:ClearESP();
+    ESP2:ClearESP();
     Highlights_Active = true;
 
     for i, v in ipairs(Players:GetPlayers()) do
         if v ~= Player then
             v.CharacterAdded:Connect(function(Char)
-                ESP:AddOutline(Char)
-                ESP:AddNameTag(Char)
+                ESP2:AddOutline(Char)
+                ESP2:AddNameTag(Char)
             end)
 
             if v.game.Players.Tired_Aizen.Character then
-                ESP:AddOutline(v.Character)
-                ESP:AddNameTag(v.Character)
+                ESP2:AddOutline(v.Character)
+                ESP2:AddNameTag(v.Character)
             end
         end
     end
@@ -845,6 +845,16 @@ game:GetService("Players").PlayerAdded:Connect(function(Player)
         if Highlights_Active then
             ESP:AddOutline(Char)
             ESP:AddNameTag(Char)
+        end
+    end)
+end)
+
+-- Highlight helper
+game:GetService("Players").PlayerAdded:Connect(function(Player)
+    Player.CharacterAdded:Connect(function(Char)
+        if Highlights_Active then
+            ESP2:AddOutline(Char)
+            ESP2:AddNameTag(Char)
         end
     end)
 end)
