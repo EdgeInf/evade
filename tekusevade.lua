@@ -813,7 +813,7 @@ end)
 
 -- teku copy tag
 tekuSection:AddButton("Copy ores tag", "Copies his tag (he has frqs off)", function()
-    setclipboard("🔩 orestias#5014")
+    setclipboard("orestias#5014")
 end)
 
 -- [[ Helpers / Loop Funcs ]] --
