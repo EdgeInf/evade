@@ -25,7 +25,7 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/Li
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/esp/main/highlightoutline.lua"))()
 
 -- Main Window
-local Window = lib:CreateWindow("Evade ; Made by teku")
+local Window = lib:CreateWindow("Evade ; Made by orestias")
 
 -- Create Pages
 local MainPage = Window:NewTab("Main")
@@ -34,7 +34,7 @@ local MainPage = Window:NewTab("Main")
 local CharSection = MainPage:AddSection("Character")
 local OtherSection = MainPage:AddSection("Headless")
 local ESPSection = MainPage:AddSection("Esp stuff")
-local tekuSection = MainPage:AddSection("teku")
+local tekuSection = MainPage:AddSection("ores")
 
 -- GUI Toggles / Settings
 local Highlights_Active = false;
@@ -812,8 +812,8 @@ ESPSection:AddToggle("No Camera Shake", "Removes camera shake that the bots give
 end)
 
 -- teku copy tag
-tekuSection:AddButton("Copy teku tag", "Copies his tag (he has frqs off)", function()
-    setclipboard("🔩 tekustein 🔩#0745")
+tekuSection:AddButton("Copy ores tag", "Copies his tag (he has frqs off)", function()
+    setclipboard("🔩 orestias#5014")
 end)
 
 -- [[ Helpers / Loop Funcs ]] --
