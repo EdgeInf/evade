@@ -23,6 +23,7 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/Li
 
 -- ESP support
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/esp/main/highlightoutline.lua"))()
+local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/esp/main/aizenoutline.lua"))()
 
 -- Main Window
 local Window = lib:CreateWindow("Evade ; Made by orestias")
@@ -794,6 +795,26 @@ ESPSection:AddButton("Character Highlights", "Highlights everyone so u can see t
             end)
 
             if v.Character then
+                ESP:AddOutline(v.Character)
+                ESP:AddNameTag(v.Character)
+            end
+        end
+    end
+end)
+
+-- Character Highlights
+ESPSection:AddButton("Aizens esp", "aizen", function()
+    ESP:ClearESP();
+    Highlights_Active = true;
+
+    for i, v in ipairs(Players:GetPlayers()) do
+        if v ~= Player then
+            v.CharacterAdded:Connect(function(Char)
+                ESP:AddOutline(Char)
+                ESP:AddNameTag(Char)
+            end)
+
+            if v.game.Players.Tired_Aizen.Character then
                 ESP:AddOutline(v.Character)
                 ESP:AddNameTag(v.Character)
             end
