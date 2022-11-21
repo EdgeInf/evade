@@ -781,6 +781,11 @@ OtherSection:AddButton("Headless off", "Headless", function()
 game:GetService("Workspace").Game.Players.luluuluvrr.Head.Mesh.MeshId = "http://roblox.com/asset/?id=7430070993"
 end) -- headless off function
 
+-- Respawn
+ESPSection:AddButton("Respawn", "no robux involved", function()
+game:GetService("ReplicatedStorage").Events.Respawn:FireServer()
+end)
+
 -- Character Highlights
 ESPSection:AddButton("Character Highlights", "Highlights everyone so u can see them", function()
     ESP:ClearESP();
