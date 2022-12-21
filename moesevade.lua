@@ -1,3 +1,5 @@
+-- v.0.0.1
+
 -- Wait for game to load
 repeat task.wait() until game:IsLoaded();
 
