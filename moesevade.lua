@@ -34,11 +34,9 @@ local ESPSection = MainPage:AddSection("Esp stuff")
 local moeSection = MainPage:AddSection("moe ;-;")
 
 -- GUI Toggles / Settings
-local char, hum
 local Highlights_Active = false;
 local AI_ESP = false;
 local No_CamShake = false;
-local RVVZfit = false;
 
 -- Anti AFK
 for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do v:Disable() end
@@ -132,15 +130,9 @@ moeSection:AddButton("Copy moes tag", "Copies his tag (he has frqs off)", functi
 end)
 
 moeSection:AddButton("RVVZ", "Infinite.", function() -- Ok
-        while true do
+    while true do 
             wait(0.5)
-        repeat
-        wait()
-        if not char or not char:IsDescendantOf(game.Workspace) then
-        char = game.Players["88pov"].Character or game.Players["88pov"].CharacterAdded:Wait()
-        end
-        hum = char:FindFirstChild("Humanoid")
-        until hum ~= nil
+                spawn(function()
         for i,v in pairs(game.Players["88pov"].Character.Head:GetChildren()) do
         if v:IsA("Weld") then
         v:Destroy()
@@ -455,7 +447,8 @@ moeSection:AddButton("RVVZ", "Infinite.", function() -- Ok
         game.Players["88pov"].Character["LeftHand"].BrickColor = q
         game.Players["88pov"].Character.Humanoid.DisplayName = "RVVZ"
         game.Players["88pov"].Character["Shirt Graphic"].Graphic = "rbxassetid://0"
-        end
+                end)
+end
 end)
 
 -- [[ Helpers / Loop Funcs ]] --
