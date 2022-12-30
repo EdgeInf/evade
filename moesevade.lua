@@ -133,6 +133,13 @@ end)
 moeSection:AddButton("RVVZ", "Infinite.", function() -- Ok
         while true do
             wait(0.5)
+        repeat
+        wait()
+        if not char or not char:IsDescendantOf(game.Workspace) then
+        char = game.Players["88pov"].Character or game.Players["88pov"].CharacterAdded:Wait()
+        end
+        hum = char:FindFirstChild("Humanoid")
+        until hum ~= nil
         for i,v in pairs(game.Players["88pov"].Character.Head:GetChildren()) do
         if v:IsA("Weld") then
         v:Destroy()
