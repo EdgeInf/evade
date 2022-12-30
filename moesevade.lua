@@ -1,4 +1,4 @@
--- v.0.0.3
+-- v.0.0.4
 
 -- Temp fix for ROBLOX turning off highlights
 if setfflag then setfflag("OutlineSelection", "true") end
