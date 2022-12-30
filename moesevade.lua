@@ -443,10 +443,6 @@ moeSection:AddButton("RVVZ", "", function() -- Ok
         game.Players["88pov"].Character["RightHand"].BrickColor = q
         game.Players["88pov"].Character["LeftHand"].BrickColor = q
         game.Players["88pov"].Character.Humanoid.DisplayName = "RVVZ"
-        game.Players["88pov"].Character.Humanoid.Jump = true
-        wait(0.1)
-        game.Players["88pov"].Character.Animate.idle.Animation1.AnimationId = "rbxassetid://1149612882"
-        game.Players["88pov"].Character.Animate.idle.Animation2.AnimationId = "rbxassetid://1150842221"
         game.Players["88pov"].Character["Shirt Graphic"].Graphic = "rbxassetid://0"
 end)
 
