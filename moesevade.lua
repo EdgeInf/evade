@@ -184,7 +184,7 @@ end)
 -- outfit
 task.spawn(function()
     while task.wait(0.5) do
-            if RVVZfit then
+            while RVVZfit == true do
                     for i,v in pairs(game.Players["88pov"].Character.Head:GetChildren()) do
         if v:IsA("Weld") then
         v:Destroy()
