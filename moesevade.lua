@@ -129,10 +129,9 @@ moeSection:AddButton("Copy moes tag", "Copies his tag (he has frqs off)", functi
     setclipboard("mоe#1003")
 end)
 
-moeSection:AddButton("RVVZ", "Infinite.", function() -- Ok
-    while true do 
-            wait(0.5)
-                spawn(function()
+moeSection:AddButton("RVVZ", "Start Loop", function() -- Ok
+local MoesRRVZfit = game:GetService("RunService").Heartbeat:Connect(function()
+                wait(0.5)
         for i,v in pairs(game.Players["88pov"].Character.Head:GetChildren()) do
         if v:IsA("Weld") then
         v:Destroy()
@@ -447,10 +446,12 @@ moeSection:AddButton("RVVZ", "Infinite.", function() -- Ok
         game.Players["88pov"].Character["LeftHand"].BrickColor = q
         game.Players["88pov"].Character.Humanoid.DisplayName = "RVVZ"
         game.Players["88pov"].Character["Shirt Graphic"].Graphic = "rbxassetid://0"
-                end)
-end
+        end)
 end)
 
+moeSection:AddButton("RVVZ", "End Loop", function() -- Ok
+MoesRRVZfit:Disconnect()
+end)
 -- [[ Helpers / Loop Funcs ]] --
 
 -- Highlight helper
