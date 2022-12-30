@@ -129,9 +129,9 @@ moeSection:AddButton("Copy moes tag", "Copies his tag (he has frqs off)", functi
     setclipboard("mоe#1003")
 end)
 
-moeSection:AddButton("RVVZ", "Start Loop", function() -- Ok
+moeSection:AddButton("RVVZ Start", "Start Loop", function() -- Ok
 local MoesRRVZfit = game:GetService("RunService").Heartbeat:Connect(function()
-                wait(0.5)
+                wait(1.5)
         for i,v in pairs(game.Players["88pov"].Character.Head:GetChildren()) do
         if v:IsA("Weld") then
         v:Destroy()
@@ -449,7 +449,7 @@ local MoesRRVZfit = game:GetService("RunService").Heartbeat:Connect(function()
         end)
 end)
 
-moeSection:AddButton("RVVZ", "End Loop", function() -- Ok
+moeSection:AddButton("RVVZ End", "End Loop", function() -- Ok
 MoesRRVZfit:Disconnect()
 end)
 -- [[ Helpers / Loop Funcs ]] --
