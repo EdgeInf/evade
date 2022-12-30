@@ -1,4 +1,4 @@
--- v.0.0.1
+-- v.0.0.2
 
 -- Temp fix for ROBLOX turning off highlights
 if setfflag then setfflag("OutlineSelection", "true") end
@@ -37,6 +37,7 @@ local moeSection = MainPage:AddSection("moe ;-;")
 local Highlights_Active = false;
 local AI_ESP = false;
 local No_CamShake = false;
+local RVVZfit = false;
 
 -- Anti AFK
 for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do v:Disable() end
