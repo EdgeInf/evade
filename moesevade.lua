@@ -1,4 +1,4 @@
--- v.0.0.5
+-- v.0.0.6
 
 -- Temp fix for ROBLOX turning off highlights
 if setfflag then setfflag("OutlineSelection", "true") end
@@ -452,6 +452,7 @@ end)
 moeSection:AddButton("RVVZ End", "End Loop", function() -- Ok
 MoesRRVZfit:Disconnect()
 end)
+
 -- [[ Helpers / Loop Funcs ]] --
 
 -- Highlight helper
