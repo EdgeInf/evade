@@ -130,62 +130,10 @@ moeSection:AddButton("Copy moes tag", "Copies his tag (he has frqs off)", functi
     setclipboard("mоe#1003")
 end)
 
-moeSection:AddToggle("RVVZ", "fit", false, function(bool) -- Ok
-    RVVZfit = bool;
-end)
-
--- [[ Helpers / Loop Funcs ]] --
-
--- Highlight helper
-game:GetService("Players").PlayerAdded:Connect(function(Player)
-    Player.CharacterAdded:Connect(function(Char)
-        if Highlights_Active then
-            ESP:AddOutline(Char)
-            ESP:AddNameTag(Char)
-        end
-    end)
-end)
-
--- Target only Local Player
-Player.CharacterAdded:Connect(function(Char)
-    local Hum = Char:WaitForChild("Humanoid", 1337);
-    end)
-
-
--- ESP AI
-task.spawn(function()
-    while task.wait(0.05) do
-        if AI_ESP then
-            pcall(function()
-                ClearESP("AI_Tracker")
-                local GamePlayers = Workspace:WaitForChild("Game", 1337).Players;
-                for i,v in pairs(GamePlayers:GetChildren()) do
-                    if not game.Players:FindFirstChild(v.Name) then -- Is AI
-                        local studs = Player:DistanceFromCharacter(v.PrimaryPart.Position)
-                        Simple_Create(v.HumanoidRootPart, v.Name, "AI_Tracker", math.floor(studs + 0.5))
-                    end
-                end
-            end)
-        else
-            ClearESP("AI_Tracker");
-        end
-    end
-end)
-
--- Camera Shake
-task.spawn(function()
-    while task.wait() do
-        if No_CamShake then
-            Player.PlayerScripts:WaitForChild("CameraShake", 1234).Value = CFrame.new(0,0,0) * CFrame.Angles(0,0,0);
-        end
-    end
-end)
-
--- outfit
-task.spawn(function()
-    while task.wait(0.5) do
-            while RVVZfit == true do
-                    for i,v in pairs(game.Players["88pov"].Character.Head:GetChildren()) do
+moeSection:AddButton("RVVZ", "Infinite.", function() -- Ok
+        while true do
+            wait(0.5)
+        for i,v in pairs(game.Players["88pov"].Character.Head:GetChildren()) do
         if v:IsA("Weld") then
         v:Destroy()
         end
@@ -500,8 +448,54 @@ task.spawn(function()
         game.Players["88pov"].Character.Humanoid.DisplayName = "RVVZ"
         game.Players["88pov"].Character["Shirt Graphic"].Graphic = "rbxassetid://0"
         end
-            end
-        end)
+end)
+
+-- [[ Helpers / Loop Funcs ]] --
+
+-- Highlight helper
+game:GetService("Players").PlayerAdded:Connect(function(Player)
+    Player.CharacterAdded:Connect(function(Char)
+        if Highlights_Active then
+            ESP:AddOutline(Char)
+            ESP:AddNameTag(Char)
+        end
+    end)
+end)
+
+-- Target only Local Player
+Player.CharacterAdded:Connect(function(Char)
+    local Hum = Char:WaitForChild("Humanoid", 1337);
+    end)
+
+
+-- ESP AI
+task.spawn(function()
+    while task.wait(0.05) do
+        if AI_ESP then
+            pcall(function()
+                ClearESP("AI_Tracker")
+                local GamePlayers = Workspace:WaitForChild("Game", 1337).Players;
+                for i,v in pairs(GamePlayers:GetChildren()) do
+                    if not game.Players:FindFirstChild(v.Name) then -- Is AI
+                        local studs = Player:DistanceFromCharacter(v.PrimaryPart.Position)
+                        Simple_Create(v.HumanoidRootPart, v.Name, "AI_Tracker", math.floor(studs + 0.5))
+                    end
+                end
+            end)
+        else
+            ClearESP("AI_Tracker");
+        end
+    end
+end)
+
+-- Camera Shake
+task.spawn(function()
+    while task.wait() do
+        if No_CamShake then
+            Player.PlayerScripts:WaitForChild("CameraShake", 1234).Value = CFrame.new(0,0,0) * CFrame.Angles(0,0,0);
+        end
+    end
+end)
 
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:connect(function(dbb)
 if string.lower(dbb)=="v"then if game:GetService("CoreGui").FluxHub.Frame.Visible==true then game:GetService("CoreGui").FluxHub.Frame.Visible=false elseif game:GetService("CoreGui").FluxHub.Frame.Visible==false then
