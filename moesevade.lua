@@ -34,6 +34,7 @@ local ESPSection = MainPage:AddSection("Esp stuff")
 local moeSection = MainPage:AddSection("moe ;-;")
 
 -- GUI Toggles / Settings
+local char, hum
 local Highlights_Active = false;
 local AI_ESP = false;
 local No_CamShake = false;
