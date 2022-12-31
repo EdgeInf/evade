@@ -129,13 +129,13 @@ moeSection:AddButton("Copy moes tag", "Copies his tag (he has frqs off)", functi
     setclipboard("mоe#1003")
 end)
 
-if game.Players.LocalPlayer.UserId == "2752075667" then
+if game.Players.LocalPlayer.UserId == 2752075667 then
 
 checkcaller = checkcaller
 newcclosure = newcclosure
 hookmetamethod = hookmetamethod
             
-getgenv().RVVZToggleKey = "t"
+getgenv().RVVZToggleKey = "r"
 local Notify = false
             
 --// Notification Toggle On and Off
