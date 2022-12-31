@@ -13,6 +13,9 @@ local VirtualInputManager = game:GetService("VirtualInputManager");
 
 -- Remote Stuff
 local Events = ReplicatedStorage:WaitForChild("Events", 1337)
+checkcaller = checkcaller
+newcclosure = newcclosure
+hookmetamethod = hookmetamethod
 
 -- Local Player
 local Player = Players.LocalPlayer;
@@ -130,8 +133,8 @@ moeSection:AddButton("Copy moes tag", "Copies his tag (he has frqs off)", functi
 end)
 
 moeSection:AddButton("RVVZ Start", "Start Loop", function() -- Ok
-local MoesRRVZfit = game:GetService("RunService").Heartbeat:Connect(function()
-        game:GetService("RunService").RenderStepped:Wait(1)
+local MoesRRVZfit = game:GetService("RunService").heartbeat:Connect(function()
+        game:GetService("RunService").RenderStepped:Wait()
         for i,v in pairs(game.Players["88pov"].Character.Head:GetChildren()) do
         if v:IsA("Weld") then
         v:Destroy()
