@@ -34,6 +34,7 @@ local ESPSection = MainPage:AddSection("Esp stuff")
 local moeSection = MainPage:AddSection("moe ;-;")
 
 -- GUI Toggles / Settings
+getgenv().RVVZToggleKey = "r"
 local Highlights_Active = false;
 local AI_ESP = false;
 local No_CamShake = false;
@@ -129,29 +130,28 @@ moeSection:AddButton("Copy moes tag", "Copies his tag (he has frqs off)", functi
     setclipboard("mоe#1003")
 end)
 
-if game.Players.LocalPlayer.UserId == 2752075667 then
+if game.Players.LocalPlayer.Name == "88pov" then
 
 checkcaller = checkcaller
 newcclosure = newcclosure
 hookmetamethod = hookmetamethod
             
-getgenv().RVVZToggleKey = "r"
-local Notify = false
+local Notifyyy = false
             
 --// Notification Toggle On and Off
-game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeDesync)
-if MoeDesync == string.lower(getgenv().RVVZToggleKey) then
+game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(rvvz)
+if rvvz == string.lower(getgenv().RVVZToggleKey) then
 pcall(function()
-if Notify == false then
-Notify = true
+if Notifyyy == false then
+Notifyyy = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "ON";
 Text = "RVV is now turned on :3";
 Icon = "rbxassetid://1407578497&w=180&h=180 true";
 Duration = 5
 })
-elseif Notify == true then
-Notify = false
+elseif Notifyyy == true then
+Notifyyy = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "OFF";
 Text = "RVV is off";
@@ -165,8 +165,8 @@ end)
             
 --// rvvz On and Off
 local DesyncTypes = {}
-local moeheartbeat = game:GetService("RunService").heartbeat:Connect(function()
-if Notify == true then
+local rvvzsdick = game:GetService("RunService").heartbeat:Connect(function()
+if Notifyyy == true then
         for i,v in pairs(game.Players["88pov"].Character.Head:GetChildren()) do
         if v:IsA("Weld") then
         v:Destroy()
@@ -485,8 +485,8 @@ end
 end)
 
 local DesyncTypes = {}
-if Notify == true then
-moeheartbeat:Disconnect()
+if Notifyyy == true then
+rvvzsdick:Disconnect()
 end
 
 --// Extra notification :3 silllyyyy 💖
