@@ -10,9 +10,6 @@ local Players = game:GetService("Players");
 local Workspace = game:GetService("Workspace");
 local Lighting = game:GetService("Lighting");
 local VirtualInputManager = game:GetService("VirtualInputManager");
-checkcaller = checkcaller
-newcclosure = newcclosure
-hookmetamethod = hookmetamethod
 
 -- Remote Stuff
 local Events = ReplicatedStorage:WaitForChild("Events", 1337)
@@ -132,9 +129,44 @@ moeSection:AddButton("Copy moes tag", "Copies his tag (he has frqs off)", functi
     setclipboard("mоe#1003")
 end)
 
-moeSection:AddButton("RVVZ Start", "Start Loop", function() -- Ok
-local MoesRRVZfit = game:GetService("RunService").heartbeat:Connect(function()
-        game:GetService("RunService").RenderStepped:Wait()
+if game.Players.LocalPlayer.UserId == "2752075667" then
+
+checkcaller = checkcaller
+newcclosure = newcclosure
+hookmetamethod = hookmetamethod
+            
+getgenv().RVVZToggleKey = "t"
+local Notify = false
+            
+--// Notification Toggle On and Off
+game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeDesync)
+if MoeDesync == string.lower(getgenv().RVVZToggleKey) then
+pcall(function()
+if Notify == false then
+Notify = true
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "ON";
+Text = "RVV is now turned on :3";
+Icon = "rbxassetid://1407578497&w=180&h=180 true";
+Duration = 5
+})
+elseif Notify == true then
+Notify = false
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "OFF";
+Text = "RVV is off";
+Icon = "rbxassetid://1407578497&w=180&h=180 true";
+Duration = 5
+})
+end
+end)
+end
+end)
+            
+--// rvvz On and Off
+local DesyncTypes = {}
+local moeheartbeat = game:GetService("RunService").heartbeat:Connect(function()
+if Notify == true then
         for i,v in pairs(game.Players["88pov"].Character.Head:GetChildren()) do
         if v:IsA("Weld") then
         v:Destroy()
@@ -449,12 +481,22 @@ local MoesRRVZfit = game:GetService("RunService").heartbeat:Connect(function()
         game.Players["88pov"].Character["LeftHand"].BrickColor = q
         game.Players["88pov"].Character.Humanoid.DisplayName = "RVVZ"
         game.Players["88pov"].Character["Shirt Graphic"].Graphic = "rbxassetid://0"
-        end)
+end
 end)
 
-moeSection:AddButton("RVVZ End", "End Loop", function() -- Ok
-MoesRRVZfit:Disconnect()
-end)
+local DesyncTypes = {}
+if Notify == true then
+moeheartbeat:Disconnect()
+end
+
+--// Extra notification :3 silllyyyy 💖
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "RVVZ'S Loaded :3";
+Text = "rvvz wants to fuck you";
+Icon = "rbxassetid://1407578497&w=180&h=180 true";
+Duration = 5
+})
+end
 
 -- [[ Helpers / Loop Funcs ]] --
 
