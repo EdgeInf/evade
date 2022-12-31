@@ -131,7 +131,7 @@ end)
 
 moeSection:AddButton("RVVZ Start", "Start Loop", function() -- Ok
 local MoesRRVZfit = game:GetService("RunService").Heartbeat:Connect(function()
-                wait(1.5)
+        game:GetService("RunService").RenderStepped:Wait(1)
         for i,v in pairs(game.Players["88pov"].Character.Head:GetChildren()) do
         if v:IsA("Weld") then
         v:Destroy()
