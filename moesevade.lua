@@ -10,12 +10,12 @@ local Players = game:GetService("Players");
 local Workspace = game:GetService("Workspace");
 local Lighting = game:GetService("Lighting");
 local VirtualInputManager = game:GetService("VirtualInputManager");
-
--- Remote Stuff
-local Events = ReplicatedStorage:WaitForChild("Events", 1337)
 checkcaller = checkcaller
 newcclosure = newcclosure
 hookmetamethod = hookmetamethod
+
+-- Remote Stuff
+local Events = ReplicatedStorage:WaitForChild("Events", 1337)
 
 -- Local Player
 local Player = Players.LocalPlayer;
